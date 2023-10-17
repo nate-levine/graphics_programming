@@ -1,65 +1,33 @@
-# graphics_programming
-For graphics programming endeavors
+# graphics\_programming
+## For graphics programming endeavors
 
 ----------------
 
-GLFW SETUP:
-# download and extract GLFW 64-bit Windows binaries
+# SETUP
+## GLFW Download:
+download and extract GLFW 64-bit Windows binaries:
 https://www.glfw.org/download.html
-# in the project root directory
-$ mkdir dependencies
-# in ./dependencies, paste in files from GLFW
-- libglfw3.a
-- glfw3.h
+
+## file strucutre
+graphics\_programming/
+-- dependencies/
+|  --include/
+|  |  GLFW/
+|  |  --glfw3.h
+|  --lib/
+|     --libglfw3.a
+--main.cpp
 
 ----------------
 
-COMPILATION:
-# navigate to the project root directory:
-# compile the program
-g++ main.cpp -I dependencies .\dependencies\libglfw3.a -lopengl32 -lgdi32 -o main.exe
-# execute the program
-./main.exe
-
+# COMPILATION:
+## navigate to the project root directory and run:
+1. g++ -o main main.cpp -Idependencies/include -Ldependencies/lib -lglfw3 -lopengl32 -lgdi32
+## command explaination:
+- g++: command to compile c++ code.
+- -o <program>: output the program with a name
+- main.cpp: the file to compile
+- -Idependencies/include: the path to search for include files
+- -Ldependencies/lib: the path to search for libraries to link
+- -lglfw3 -lopengl32 -lgdi32: the necessary libraries to link for this project.
 ----------------
-
-TEST:
-# This code should make a window appear
-
-#include "dependencies/glfw3.h"
-
-int main(void)
-{
-    GLFWwindow* window;
-
-    /* Initialize the library */
-    if (!glfwInit())
-        return -1;
-
-    /* Create a windowed mode window and its OpenGL context */
-    window = glfwCreateWindow(640, 480, "Hello World", NULL, NULL);
-    if (!window)
-    {
-        glfwTerminate();
-        return -1;
-    }
-
-    /* Make the window's context current */
-    glfwMakeContextCurrent(window);
-
-    /* Loop until the user closes the window */
-    while (!glfwWindowShouldClose(window))
-    {
-        /* Render here */
-        glClear(GL_COLOR_BUFFER_BIT);
-
-        /* Swap front and back buffers */
-        glfwSwapBuffers(window);
-
-        /* Poll for and process events */
-        glfwPollEvents();
-    }
-
-    glfwTerminate();
-    return 0;
-}

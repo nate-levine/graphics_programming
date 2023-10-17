@@ -1,4 +1,4 @@
-#include "dependencies/glfw3.h"
+#include <GLFW/glfw3.h>
 #include <iostream>
 
 int main()
