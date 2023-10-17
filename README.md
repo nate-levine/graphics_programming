@@ -22,11 +22,11 @@ graphics\_programming/
 
 # COMPILATION:
 ## navigate to the project root directory and run:
-1. g++ -o main main.cpp -Idependencies/include -Ldependencies/lib -lglfw3 -lopengl32 -lgdi32
+1. g++ -o main main.cpp glad.c -Idependencies/include -Ldependencies/lib -lglfw3 -lopengl32 -lgdi32
 ## command explaination:
 - g++: command to compile c++ code.
 - -o <program>: output the program with a name
-- main.cpp: the file to compile
+- main.cpp glad.c: the file to compile
 - -Idependencies/include: the path to search for include files
 - -Ldependencies/lib: the path to search for libraries to link
 - -lglfw3 -lopengl32 -lgdi32: the necessary libraries to link for this project.
