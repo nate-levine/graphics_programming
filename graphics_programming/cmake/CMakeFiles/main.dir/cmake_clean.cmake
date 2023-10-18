@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/main.dir/4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/graphics_programming/src/glad.c.obj.d"
   "CMakeFiles/main.dir/4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/graphics_programming/src/main.cpp.obj"
   "CMakeFiles/main.dir/4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/graphics_programming/src/main.cpp.obj.d"
+  "CMakeFiles/main.dir/4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/graphics_programming/src/shader.cpp.obj"
+  "CMakeFiles/main.dir/4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/graphics_programming/src/shader.cpp.obj.d"
 )
 
 # Per-language clean rules from dependency scanning.

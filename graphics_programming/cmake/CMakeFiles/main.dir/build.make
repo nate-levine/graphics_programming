@@ -99,21 +99,38 @@ CMakeFiles/main.dir/4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/gr
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/graphics_programming/src/main.cpp.s"
 	C:/msys64/mingw64/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:/Users/n8lev/OneDrive - Worcester Polytechnic Institute (wpi.edu)/Dev/graphics_programming/graphics_programming/src/main.cpp" -o CMakeFiles/main.dir/4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/graphics_programming/src/main.cpp.s
 
+CMakeFiles/main.dir/4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/graphics_programming/src/shader.cpp.obj: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/graphics_programming/src/shader.cpp.obj: CMakeFiles/main.dir/includes_CXX.rsp
+CMakeFiles/main.dir/4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/graphics_programming/src/shader.cpp.obj: C:/Users/n8lev/OneDrive\ -\ Worcester\ Polytechnic\ Institute\ (wpi.edu)/Dev/graphics_programming/graphics_programming/src/shader.cpp
+CMakeFiles/main.dir/4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/graphics_programming/src/shader.cpp.obj: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:/Users/n8lev/OneDrive - Worcester Polytechnic Institute (wpi.edu)/Dev/graphics_programming/graphics_programming/cmake/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/main.dir/4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/graphics_programming/src/shader.cpp.obj"
+	C:/msys64/mingw64/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/graphics_programming/src/shader.cpp.obj -MF CMakeFiles/main.dir/4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/graphics_programming/src/shader.cpp.obj.d -o CMakeFiles/main.dir/4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/graphics_programming/src/shader.cpp.obj -c "C:/Users/n8lev/OneDrive - Worcester Polytechnic Institute (wpi.edu)/Dev/graphics_programming/graphics_programming/src/shader.cpp"
+
+CMakeFiles/main.dir/4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/graphics_programming/src/shader.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/graphics_programming/src/shader.cpp.i"
+	C:/msys64/mingw64/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:/Users/n8lev/OneDrive - Worcester Polytechnic Institute (wpi.edu)/Dev/graphics_programming/graphics_programming/src/shader.cpp" > CMakeFiles/main.dir/4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/graphics_programming/src/shader.cpp.i
+
+CMakeFiles/main.dir/4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/graphics_programming/src/shader.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/graphics_programming/src/shader.cpp.s"
+	C:/msys64/mingw64/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:/Users/n8lev/OneDrive - Worcester Polytechnic Institute (wpi.edu)/Dev/graphics_programming/graphics_programming/src/shader.cpp" -o CMakeFiles/main.dir/4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/graphics_programming/src/shader.cpp.s
+
 # Object files for target main
 main_OBJECTS = \
 "CMakeFiles/main.dir/4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/graphics_programming/src/glad.c.obj" \
-"CMakeFiles/main.dir/4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/graphics_programming/src/main.cpp.obj"
+"CMakeFiles/main.dir/4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/graphics_programming/src/main.cpp.obj" \
+"CMakeFiles/main.dir/4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/graphics_programming/src/shader.cpp.obj"
 
 # External object files for target main
 main_EXTERNAL_OBJECTS =
 
 C:/Users/n8lev/OneDrive\ -\ Worcester\ Polytechnic\ Institute\ (wpi.edu)/Dev/graphics_programming/graphics_programming/build/main.exe: CMakeFiles/main.dir/4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/graphics_programming/src/glad.c.obj
 C:/Users/n8lev/OneDrive\ -\ Worcester\ Polytechnic\ Institute\ (wpi.edu)/Dev/graphics_programming/graphics_programming/build/main.exe: CMakeFiles/main.dir/4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/graphics_programming/src/main.cpp.obj
+C:/Users/n8lev/OneDrive\ -\ Worcester\ Polytechnic\ Institute\ (wpi.edu)/Dev/graphics_programming/graphics_programming/build/main.exe: CMakeFiles/main.dir/4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/graphics_programming/src/shader.cpp.obj
 C:/Users/n8lev/OneDrive\ -\ Worcester\ Polytechnic\ Institute\ (wpi.edu)/Dev/graphics_programming/graphics_programming/build/main.exe: CMakeFiles/main.dir/build.make
 C:/Users/n8lev/OneDrive\ -\ Worcester\ Polytechnic\ Institute\ (wpi.edu)/Dev/graphics_programming/graphics_programming/build/main.exe: ../dependencies/lib/libglfw3.a
 C:/Users/n8lev/OneDrive\ -\ Worcester\ Polytechnic\ Institute\ (wpi.edu)/Dev/graphics_programming/graphics_programming/build/main.exe: CMakeFiles/main.dir/linkLibs.rsp
 C:/Users/n8lev/OneDrive\ -\ Worcester\ Polytechnic\ Institute\ (wpi.edu)/Dev/graphics_programming/graphics_programming/build/main.exe: CMakeFiles/main.dir/objects1.rsp
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:/Users/n8lev/OneDrive - Worcester Polytechnic Institute (wpi.edu)/Dev/graphics_programming/graphics_programming/cmake/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable \"C:/Users/n8lev/OneDrive - Worcester Polytechnic Institute (wpi.edu)/Dev/graphics_programming/graphics_programming/build/main.exe\""
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:/Users/n8lev/OneDrive - Worcester Polytechnic Institute (wpi.edu)/Dev/graphics_programming/graphics_programming/cmake/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable \"C:/Users/n8lev/OneDrive - Worcester Polytechnic Institute (wpi.edu)/Dev/graphics_programming/graphics_programming/build/main.exe\""
 	"C:/Program Files/CMake/bin/cmake.exe" -E rm -f CMakeFiles/main.dir/objects.a
 	C:/msys64/mingw64/bin/ar.exe qc CMakeFiles/main.dir/objects.a @CMakeFiles/main.dir/objects1.rsp
 	C:/msys64/mingw64/bin/g++.exe -Wl,--whole-archive CMakeFiles/main.dir/objects.a -Wl,--no-whole-archive -o "C:/Users/n8lev/OneDrive - Worcester Polytechnic Institute (wpi.edu)/Dev/graphics_programming/graphics_programming/build/main.exe" -Wl,--out-implib,"C:/Users/n8lev/OneDrive - Worcester Polytechnic Institute (wpi.edu)/Dev/graphics_programming/graphics_programming/build/libmain.dll.a" -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/main.dir/linkLibs.rsp

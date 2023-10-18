@@ -177,6 +177,30 @@ main/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/graphics_programming/src/main.cpp.s
 .PHONY : 4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/graphics_programming/src/main.cpp.s
 
+4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/graphics_programming/src/shader.obj: 4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/graphics_programming/src/shader.cpp.obj
+.PHONY : 4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/graphics_programming/src/shader.obj
+
+# target to build an object file
+4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/graphics_programming/src/shader.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/graphics_programming/src/shader.cpp.obj
+.PHONY : 4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/graphics_programming/src/shader.cpp.obj
+
+4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/graphics_programming/src/shader.i: 4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/graphics_programming/src/shader.cpp.i
+.PHONY : 4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/graphics_programming/src/shader.i
+
+# target to preprocess a source file
+4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/graphics_programming/src/shader.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/graphics_programming/src/shader.cpp.i
+.PHONY : 4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/graphics_programming/src/shader.cpp.i
+
+4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/graphics_programming/src/shader.s: 4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/graphics_programming/src/shader.cpp.s
+.PHONY : 4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/graphics_programming/src/shader.s
+
+# target to generate assembly for a file
+4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/graphics_programming/src/shader.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/graphics_programming/src/shader.cpp.s
+.PHONY : 4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/graphics_programming/src/shader.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -192,6 +216,9 @@ help:
 	@echo "... 4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/graphics_programming/src/main.obj"
 	@echo "... 4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/graphics_programming/src/main.i"
 	@echo "... 4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/graphics_programming/src/main.s"
+	@echo "... 4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/graphics_programming/src/shader.obj"
+	@echo "... 4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/graphics_programming/src/shader.i"
+	@echo "... 4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/graphics_programming/src/shader.s"
 .PHONY : help
 
 
