@@ -15,7 +15,7 @@ std::string Shader::readShaderFile(std::string shaderPath)
     std::string lineString;
     std::ifstream readFile(shaderPath);
     
-    // If the file can be opened,
+    // If the file can be opened, copy those file contents into a string
     if (readFile.is_open())
     {
 	while (getline(readFile, lineString))

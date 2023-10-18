@@ -42,10 +42,11 @@ int main()
     // Vertices data
     float vertices[] =
     {
-        -0.5f,  0.5f,  0.0f,
-	-0.5f, -0.5f,  0.0f,
-	 0.5f, -0.5f,  0.0f,
-	 0.5f,  0.5f,  0.0f,
+	/*position*/		/*color*/
+        -0.5f,  0.5f,  0.0f,	1.0f, 0.0f, 0.0f,
+	-0.5f, -0.5f,  0.0f,	0.0f, 1.0f, 0.0f,
+	 0.5f, -0.5f,  0.0f,	0.0f, 0.0f, 1.0f,
+	 0.5f,  0.5f,  0.0f,	1.0f, 0.0f, 1.0f,
     };
     // Indices data
     unsigned int indices[] =
@@ -71,9 +72,12 @@ int main()
     // Pass data to element buffer
     glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices), indices, GL_STATIC_DRAW);
     // Format buffer vertex attribute(s)
-    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 *	sizeof(float), (void*)0);
-    // Enable vertex attribute
+    // position
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 6 *	sizeof(float), (void*)0);
     glEnableVertexAttribArray(0);
+    // color
+    glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void*)(3 * sizeof(float)));
+    glEnableVertexAttribArray(1);
     // Unbind vertex array
     glBindVertexArray(0);
 
