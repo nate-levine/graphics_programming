@@ -30,4 +30,10 @@ graphics\_programming/
 - -Idependencies/include: the path to search for include files
 - -Ldependencies/lib: the path to search for libraries to link
 - -lglfw3 -lopengl32 -lgdi32: the necessary libraries to link for this project.
+
+# COMPILATION USING CMAKE
+# in root/cmake
+1. Clear cache by deleting CMakeCache.txt
+2. cmake -G "Unix Makefiles" .
+3. make
 ----------------
