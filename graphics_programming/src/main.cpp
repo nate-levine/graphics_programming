@@ -7,6 +7,9 @@
 // Custom includes
 #include <shader.h>
 
+// Resources
+#include <stb_image.h> // Image loading library
+
 int main()
 {
     // Initialize GLFW
@@ -42,11 +45,11 @@ int main()
     // Vertices data
     float vertices[] =
     {
-	/*position*/		/*color*/
-        -0.5f,  0.5f,  0.0f,	1.0f, 0.0f, 0.0f,
-	-0.5f, -0.5f,  0.0f,	0.0f, 1.0f, 0.0f,
-	 0.5f, -0.5f,  0.0f,	0.0f, 0.0f, 1.0f,
-	 0.5f,  0.5f,  0.0f,	1.0f, 0.0f, 1.0f,
+	/*position*/		    /*color*/           /*uv*/
+    -0.5f,  0.5f,  0.0f,	1.0f, 0.0f, 0.0f,   0.0f, 1.0f,
+	-0.5f, -0.5f,  0.0f,	0.0f, 1.0f, 0.0f,   0.0f, 0.0f,
+	 0.5f, -0.5f,  0.0f,	0.0f, 0.0f, 1.0f,   1.0f, 0.0f,
+	 0.5f,  0.5f,  0.0f,	1.0f, 0.0f, 1.0f,   1.0f, 1.0f,
     };
     // Indices data
     unsigned int indices[] =
@@ -73,40 +76,77 @@ int main()
     glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices), indices, GL_STATIC_DRAW);
     // Format buffer vertex attribute(s)
     // position
-    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 6 *	sizeof(float), (void*)0);
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 8 *	sizeof(float), (void*)0);
     glEnableVertexAttribArray(0);
     // color
-    glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void*)(3 * sizeof(float)));
+    glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*)(3 * sizeof(float)));
     glEnableVertexAttribArray(1);
+    // uvs
+    glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*)(6 * sizeof(float)));
+    glEnableVertexAttribArray(2);
     // Unbind vertex array
     glBindVertexArray(0);
+    
+    // Textures
+    // Create and bind texture
+    unsigned int texture;
+    glGenTextures(1, &texture);
+    glBindTexture(GL_TEXTURE_2D, texture);
+    // Set texture wrapping mode per-axis
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_MIRRORED_REPEAT);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_MIRRORED_REPEAT);
+    // Set texture filtering properties
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST_MIPMAP_NEAREST);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
+    // Load texture image using stb
+    int width, height, nrChannels;
+    unsigned char *data = stbi_load("../src/images/container.jpg", &width, &height, &nrChannels, 0);
+    // Check if the image data is loaded
+    if (data)
+    {
+        // Generate texture
+        glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, data);
+        // Generate texture mipmaps
+        glGenerateMipmap(GL_TEXTURE_2D);
+    }
+    else
+    {
+        std::cout << "ERROR::TEXTURE::FAILED_TO_LOAD" << std::endl;
+    }
+    // De-allocate image data
+    stbi_image_free(data);
+    
 
     // While window is open
     while (!glfwWindowShouldClose(window))
     {
-	// Clear the color buffer
+	    // Clear the color buffer
         glClear(GL_COLOR_BUFFER_BIT);
-	// Bind shader program
-	shader.use();
-	// Bind vertex array
-	glBindVertexArray(VAO);
-	// Draw vertices
-	glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
+        
+        // Set the active texutre (sampler2D in fragment shader)
+        glActiveTexture(GL_TEXTURE0);
+        // Bind texture
+        glBindTexture(GL_TEXTURE_2D, texture);
+	    // Bind shader program
+	    shader.use();
+	    // Bind vertex array
+	    glBindVertexArray(VAO);
+	    // Draw vertices
+	    glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
 
-	// Swap the buffers
+	    // Swap the buffers
         glfwSwapBuffers(window);
-	// Poll for events
+	    // Poll for events
         glfwPollEvents();
     }
 
     // De-allocate resources
     glDeleteVertexArrays(1, &VAO);
     glDeleteBuffers(1, &VBO);
+    glDeleteBuffers(1, &EBO);
 	
     // Terminate the window
     glfwTerminate();
     // End the program
     return 0;
 }
-
-

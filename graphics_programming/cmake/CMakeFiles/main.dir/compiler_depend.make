@@ -278,6 +278,7 @@ CMakeFiles/main.dir/4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/gr
   C:/Users/n8lev/OneDrive\ -\ Worcester\ Polytechnic\ Institute\ (wpi.edu)/Dev/graphics_programming/graphics_programming/dependencies/include/KHR/khrplatform.h \
   C:/Users/n8lev/OneDrive\ -\ Worcester\ Polytechnic\ Institute\ (wpi.edu)/Dev/graphics_programming/graphics_programming/dependencies/include/glad/glad.h \
   C:/Users/n8lev/OneDrive\ -\ Worcester\ Polytechnic\ Institute\ (wpi.edu)/Dev/graphics_programming/graphics_programming/dependencies/include/shader.h \
+  C:/Users/n8lev/OneDrive\ -\ Worcester\ Polytechnic\ Institute\ (wpi.edu)/Dev/graphics_programming/graphics_programming/dependencies/include/stb_image.h \
   C:/msys64/mingw64/include/_mingw.h \
   C:/msys64/mingw64/include/_mingw_mac.h \
   C:/msys64/mingw64/include/_mingw_off_t.h \
@@ -577,6 +578,87 @@ CMakeFiles/main.dir/4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/gr
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/stdint.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/syslimits.h
 
+CMakeFiles/main.dir/4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/graphics_programming/src/stb_image.cpp.obj: C:/Users/n8lev/OneDrive\ -\ Worcester\ Polytechnic\ Institute\ (wpi.edu)/Dev/graphics_programming/graphics_programming/src/stb_image.cpp \
+  C:/Users/n8lev/OneDrive\ -\ Worcester\ Polytechnic\ Institute\ (wpi.edu)/Dev/graphics_programming/graphics_programming/dependencies/include/stb_image.h \
+  C:/msys64/mingw64/include/_mingw.h \
+  C:/msys64/mingw64/include/_mingw_mac.h \
+  C:/msys64/mingw64/include/_mingw_off_t.h \
+  C:/msys64/mingw64/include/_mingw_secapi.h \
+  C:/msys64/mingw64/include/_mingw_stdarg.h \
+  C:/msys64/mingw64/include/assert.h \
+  C:/msys64/mingw64/include/c++/13.2.0/bit \
+  C:/msys64/mingw64/include/c++/13.2.0/bits/concept_check.h \
+  C:/msys64/mingw64/include/c++/13.2.0/bits/cpp_type_traits.h \
+  C:/msys64/mingw64/include/c++/13.2.0/bits/exception_defines.h \
+  C:/msys64/mingw64/include/c++/13.2.0/bits/functexcept.h \
+  C:/msys64/mingw64/include/c++/13.2.0/bits/move.h \
+  C:/msys64/mingw64/include/c++/13.2.0/bits/predefined_ops.h \
+  C:/msys64/mingw64/include/c++/13.2.0/bits/ptr_traits.h \
+  C:/msys64/mingw64/include/c++/13.2.0/bits/requires_hosted.h \
+  C:/msys64/mingw64/include/c++/13.2.0/bits/specfun.h \
+  C:/msys64/mingw64/include/c++/13.2.0/bits/std_abs.h \
+  C:/msys64/mingw64/include/c++/13.2.0/bits/stl_algobase.h \
+  C:/msys64/mingw64/include/c++/13.2.0/bits/stl_iterator.h \
+  C:/msys64/mingw64/include/c++/13.2.0/bits/stl_iterator_base_funcs.h \
+  C:/msys64/mingw64/include/c++/13.2.0/bits/stl_iterator_base_types.h \
+  C:/msys64/mingw64/include/c++/13.2.0/bits/stl_pair.h \
+  C:/msys64/mingw64/include/c++/13.2.0/bits/utility.h \
+  C:/msys64/mingw64/include/c++/13.2.0/cmath \
+  C:/msys64/mingw64/include/c++/13.2.0/cstdlib \
+  C:/msys64/mingw64/include/c++/13.2.0/debug/assertions.h \
+  C:/msys64/mingw64/include/c++/13.2.0/debug/debug.h \
+  C:/msys64/mingw64/include/c++/13.2.0/ext/numeric_traits.h \
+  C:/msys64/mingw64/include/c++/13.2.0/ext/type_traits.h \
+  C:/msys64/mingw64/include/c++/13.2.0/limits \
+  C:/msys64/mingw64/include/c++/13.2.0/math.h \
+  C:/msys64/mingw64/include/c++/13.2.0/pstl/pstl_config.h \
+  C:/msys64/mingw64/include/c++/13.2.0/stdlib.h \
+  C:/msys64/mingw64/include/c++/13.2.0/tr1/bessel_function.tcc \
+  C:/msys64/mingw64/include/c++/13.2.0/tr1/beta_function.tcc \
+  C:/msys64/mingw64/include/c++/13.2.0/tr1/ell_integral.tcc \
+  C:/msys64/mingw64/include/c++/13.2.0/tr1/exp_integral.tcc \
+  C:/msys64/mingw64/include/c++/13.2.0/tr1/gamma.tcc \
+  C:/msys64/mingw64/include/c++/13.2.0/tr1/hypergeometric.tcc \
+  C:/msys64/mingw64/include/c++/13.2.0/tr1/legendre_function.tcc \
+  C:/msys64/mingw64/include/c++/13.2.0/tr1/modified_bessel_func.tcc \
+  C:/msys64/mingw64/include/c++/13.2.0/tr1/poly_hermite.tcc \
+  C:/msys64/mingw64/include/c++/13.2.0/tr1/poly_laguerre.tcc \
+  C:/msys64/mingw64/include/c++/13.2.0/tr1/riemann_zeta.tcc \
+  C:/msys64/mingw64/include/c++/13.2.0/tr1/special_function_util.h \
+  C:/msys64/mingw64/include/c++/13.2.0/type_traits \
+  C:/msys64/mingw64/include/c++/13.2.0/x86_64-w64-mingw32/bits/c++config.h \
+  C:/msys64/mingw64/include/c++/13.2.0/x86_64-w64-mingw32/bits/cpu_defines.h \
+  C:/msys64/mingw64/include/c++/13.2.0/x86_64-w64-mingw32/bits/os_defines.h \
+  C:/msys64/mingw64/include/corecrt.h \
+  C:/msys64/mingw64/include/corecrt_stdio_config.h \
+  C:/msys64/mingw64/include/corecrt_wstdlib.h \
+  C:/msys64/mingw64/include/crtdefs.h \
+  C:/msys64/mingw64/include/errno.h \
+  C:/msys64/mingw64/include/limits.h \
+  C:/msys64/mingw64/include/malloc.h \
+  C:/msys64/mingw64/include/math.h \
+  C:/msys64/mingw64/include/sdks/_mingw_ddk.h \
+  C:/msys64/mingw64/include/sec_api/stdio_s.h \
+  C:/msys64/mingw64/include/sec_api/stdlib_s.h \
+  C:/msys64/mingw64/include/sec_api/string_s.h \
+  C:/msys64/mingw64/include/stdarg.h \
+  C:/msys64/mingw64/include/stddef.h \
+  C:/msys64/mingw64/include/stdint.h \
+  C:/msys64/mingw64/include/stdio.h \
+  C:/msys64/mingw64/include/stdlib.h \
+  C:/msys64/mingw64/include/string.h \
+  C:/msys64/mingw64/include/swprintf.inl \
+  C:/msys64/mingw64/include/vadefs.h \
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/emmintrin.h \
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/limits.h \
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/mm_malloc.h \
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/mmintrin.h \
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/stdarg.h \
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/stddef.h \
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/stdint.h \
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/syslimits.h \
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/xmmintrin.h
+
 
 C:/msys64/mingw64/include/mmsyscom.h:
 
@@ -638,11 +720,15 @@ C:/msys64/mingw64/include/stralign.h:
 
 C:/msys64/mingw64/include/bemapiset.h:
 
+C:/msys64/mingw64/include/c++/13.2.0/tr1/poly_hermite.tcc:
+
 C:/msys64/mingw64/include/_bsd_types.h:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/avxifmaintrin.h:
 
 C:/msys64/mingw64/include/mmiscapi.h:
+
+C:/msys64/mingw64/include/c++/13.2.0/limits:
 
 C:/msys64/mingw64/include/_mingw_mac.h:
 
@@ -742,6 +828,8 @@ C:/msys64/mingw64/include/pshpack8.h:
 
 C:/msys64/mingw64/include/fileapi.h:
 
+C:/msys64/mingw64/include/c++/13.2.0/tr1/beta_function.tcc:
+
 C:/msys64/mingw64/include/wctype.h:
 
 C:/msys64/mingw64/include/c++/13.2.0/bits/exception_defines.h:
@@ -818,6 +906,8 @@ C:/msys64/mingw64/include/oleidl.h:
 
 C:/msys64/mingw64/include/playsoundapi.h:
 
+C:/msys64/mingw64/include/c++/13.2.0/tr1/modified_bessel_func.tcc:
+
 C:/msys64/mingw64/include/poppack.h:
 
 C:/msys64/mingw64/include/processenv.h:
@@ -860,6 +950,8 @@ C:/msys64/mingw64/include/psdk_inc/_xmitfile.h:
 
 C:/msys64/mingw64/include/psdk_inc/intrin-impl.h:
 
+C:/msys64/mingw64/include/c++/13.2.0/math.h:
+
 C:/msys64/mingw64/include/stdio.h:
 
 C:/msys64/mingw64/include/pshpack1.h:
@@ -883,6 +975,8 @@ C:/msys64/mingw64/include/rpcdce.h:
 C:/msys64/mingw64/include/rpcdcep.h:
 
 C:/msys64/mingw64/include/rpcndr.h:
+
+C:/msys64/mingw64/include/c++/13.2.0/tr1/poly_laguerre.tcc:
 
 C:/msys64/mingw64/include/rpcnsi.h:
 
@@ -1156,6 +1250,8 @@ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/fmaintrin.h:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/gfniintrin.h:
 
+C:/msys64/mingw64/include/c++/13.2.0/bits/specfun.h:
+
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/hresetintrin.h:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/ia32intrin.h:
@@ -1179,6 +1275,8 @@ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/mwaitintrin.h:
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/mwaitxintrin.h:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/pconfigintrin.h:
+
+C:/Users/n8lev/OneDrive\ -\ Worcester\ Polytechnic\ Institute\ (wpi.edu)/Dev/graphics_programming/graphics_programming/src/stb_image.cpp:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/pkuintrin.h:
 
@@ -1233,6 +1331,8 @@ C:/msys64/mingw64/include/c++/13.2.0/debug/assertions.h:
 C:/msys64/mingw64/include/c++/13.2.0/cstddef:
 
 C:/Users/n8lev/OneDrive\ -\ Worcester\ Polytechnic\ Institute\ (wpi.edu)/Dev/graphics_programming/graphics_programming/dependencies/include/shader.h:
+
+C:/Users/n8lev/OneDrive\ -\ Worcester\ Polytechnic\ Institute\ (wpi.edu)/Dev/graphics_programming/graphics_programming/dependencies/include/stb_image.h:
 
 C:/msys64/mingw64/include/c++/13.2.0/backward/binders.h:
 
@@ -1300,11 +1400,15 @@ C:/msys64/mingw64/include/c++/13.2.0/bits/stl_iterator_base_funcs.h:
 
 C:/msys64/mingw64/include/c++/13.2.0/bits/stl_iterator_base_types.h:
 
+C:/msys64/mingw64/include/c++/13.2.0/tr1/special_function_util.h:
+
 C:/msys64/mingw64/include/c++/13.2.0/bits/stl_pair.h:
 
 C:/msys64/mingw64/include/c++/13.2.0/bits/string_view.tcc:
 
 C:/msys64/mingw64/include/c++/13.2.0/bits/stringfwd.h:
+
+C:/msys64/mingw64/include/c++/13.2.0/tr1/bessel_function.tcc:
 
 C:/msys64/mingw64/include/c++/13.2.0/exception:
 
@@ -1352,6 +1456,8 @@ C:/msys64/mingw64/include/c++/13.2.0/x86_64-w64-mingw32/bits/os_defines.h:
 
 C:/msys64/mingw64/include/corecrt_startup.h:
 
+C:/msys64/mingw64/include/c++/13.2.0/tr1/exp_integral.tcc:
+
 C:/msys64/mingw64/include/pthread_compat.h:
 
 C:/msys64/mingw64/include/pthread_unistd.h:
@@ -1371,3 +1477,19 @@ C:/msys64/mingw64/include/c++/13.2.0/bits/fstream.tcc:
 C:/msys64/mingw64/include/c++/13.2.0/x86_64-w64-mingw32/bits/basic_file.h:
 
 C:/msys64/mingw64/include/c++/13.2.0/x86_64-w64-mingw32/bits/c++io.h:
+
+C:/msys64/mingw64/include/assert.h:
+
+C:/msys64/mingw64/include/c++/13.2.0/cmath:
+
+C:/msys64/mingw64/include/c++/13.2.0/tr1/ell_integral.tcc:
+
+C:/msys64/mingw64/include/c++/13.2.0/tr1/gamma.tcc:
+
+C:/msys64/mingw64/include/c++/13.2.0/tr1/hypergeometric.tcc:
+
+C:/msys64/mingw64/include/c++/13.2.0/tr1/legendre_function.tcc:
+
+C:/msys64/mingw64/include/c++/13.2.0/tr1/riemann_zeta.tcc:
+
+C:/msys64/mingw64/include/math.h:

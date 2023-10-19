@@ -142,4 +142,5 @@ CMakeFiles/main.dir/4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/gr
  C:/msys64/mingw64/include/c++/13.2.0/istream \
  C:/msys64/mingw64/include/c++/13.2.0/bits/istream.tcc \
  C:/Users/n8lev/OneDrive\ -\ Worcester\ Polytechnic\ Institute\ (wpi.edu)/Dev/graphics_programming/graphics_programming/dependencies/include/shader.h \
- C:/Users/n8lev/OneDrive\ -\ Worcester\ Polytechnic\ Institute\ (wpi.edu)/Dev/graphics_programming/graphics_programming/dependencies/include/glad/glad.h
+ C:/Users/n8lev/OneDrive\ -\ Worcester\ Polytechnic\ Institute\ (wpi.edu)/Dev/graphics_programming/graphics_programming/dependencies/include/glad/glad.h \
+ C:/Users/n8lev/OneDrive\ -\ Worcester\ Polytechnic\ Institute\ (wpi.edu)/Dev/graphics_programming/graphics_programming/dependencies/include/stb_image.h

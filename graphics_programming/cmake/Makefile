@@ -201,6 +201,30 @@ main/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/graphics_programming/src/shader.cpp.s
 .PHONY : 4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/graphics_programming/src/shader.cpp.s
 
+4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/graphics_programming/src/stb_image.obj: 4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/graphics_programming/src/stb_image.cpp.obj
+.PHONY : 4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/graphics_programming/src/stb_image.obj
+
+# target to build an object file
+4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/graphics_programming/src/stb_image.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/graphics_programming/src/stb_image.cpp.obj
+.PHONY : 4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/graphics_programming/src/stb_image.cpp.obj
+
+4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/graphics_programming/src/stb_image.i: 4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/graphics_programming/src/stb_image.cpp.i
+.PHONY : 4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/graphics_programming/src/stb_image.i
+
+# target to preprocess a source file
+4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/graphics_programming/src/stb_image.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/graphics_programming/src/stb_image.cpp.i
+.PHONY : 4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/graphics_programming/src/stb_image.cpp.i
+
+4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/graphics_programming/src/stb_image.s: 4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/graphics_programming/src/stb_image.cpp.s
+.PHONY : 4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/graphics_programming/src/stb_image.s
+
+# target to generate assembly for a file
+4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/graphics_programming/src/stb_image.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/graphics_programming/src/stb_image.cpp.s
+.PHONY : 4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/graphics_programming/src/stb_image.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -219,6 +243,9 @@ help:
 	@echo "... 4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/graphics_programming/src/shader.obj"
 	@echo "... 4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/graphics_programming/src/shader.i"
 	@echo "... 4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/graphics_programming/src/shader.s"
+	@echo "... 4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/graphics_programming/src/stb_image.obj"
+	@echo "... 4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/graphics_programming/src/stb_image.i"
+	@echo "... 4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/graphics_programming/src/stb_image.s"
 .PHONY : help
 
 
