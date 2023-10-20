@@ -96,13 +96,21 @@ void Shader::use()
 void Shader::setBool(const std::string &name, bool value) const
 {
     // Get uniform location based on name, and cast bool to 0 or 1
-    glUniform1i(glGetUniformLocation(ID, name.c_str()), (int)value);
+    unsigned int location = glGetUniformLocation(ID, name.c_str());
+    glUniform1i(location, (int)value);
 }
 void Shader::setInt(const std::string &name, int value) const
 {
-    glUniform1i(glGetUniformLocation(ID, name.c_str()), value);
+    unsigned int location = glGetUniformLocation(ID, name.c_str());
+    glUniform1i(location, value);
 }
 void Shader::setFloat(const std::string &name, float value) const
 {
-    glUniform1f(glGetUniformLocation(ID, name.c_str()), value);
+    unsigned int location = glGetUniformLocation(ID, name.c_str());
+    glUniform1f(location, value);
+}
+void Shader::setMatrix4fv(const std::string &name, glm::mat4 value) const
+{
+    unsigned int location = glGetUniformLocation(ID, name.c_str());
+    glUniformMatrix4fv(location, 1, GL_FALSE, glm::value_ptr(value));
 }

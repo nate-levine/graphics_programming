@@ -9,6 +9,8 @@
 
 // Resources
 #include <stb_image.h> // Image loading library
+#include <glm/glm.hpp> // Mathematics library
+#include <glm/gtc/matrix_transform.hpp>
 
 int main()
 {
@@ -116,7 +118,6 @@ int main()
     // De-allocate image data
     stbi_image_free(data);
     
-
     // While window is open
     while (!glfwWindowShouldClose(window))
     {
@@ -128,7 +129,14 @@ int main()
         // Bind texture
         glBindTexture(GL_TEXTURE_2D, texture);
 	    // Bind shader program
-	    shader.use();
+        shader.use();
+	    // Transform matrix
+        // Start by defining the identity matrix
+        glm::mat4 trans = glm::mat4(1.0f);
+        // Add rotation to transform matrix
+        trans = glm::rotate(trans, (float)glfwGetTime(), glm::vec3(0.0f, 0.0f, 1.0f));
+        // Copy matrix into uniform for shader
+        shader.setMatrix4fv("transform", trans); 
 	    // Bind vertex array
 	    glBindVertexArray(VAO);
 	    // Draw vertices

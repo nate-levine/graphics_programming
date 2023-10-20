@@ -8,6 +8,11 @@
 // Standard library headers
 #include <string>
 
+// Resources
+#include <glm/glm.hpp> // Math library
+#include <glm/gtc/matrix_transform.hpp>
+#include <glm/gtc/type_ptr.hpp>
+
 class Shader
 {
 private:
@@ -25,6 +30,7 @@ public:
     void setBool(const std::string &name, bool value) const;
     void setInt(const std::string &name, int value) const;
     void setFloat(const std::string &name, float value) const;
+    void setMatrix4fv(const std::string &name, glm::mat4 value) const;
 };
 
 #endif
