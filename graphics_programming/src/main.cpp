@@ -12,6 +12,10 @@
 #include <glm/glm.hpp> // Mathematics library
 #include <glm/gtc/matrix_transform.hpp>
 
+// Window width and height
+const unsigned int SCREEN_WIDTH = 800;
+const unsigned int SCREEN_HEIGHT = 600;
+
 int main()
 {
     // Initialize GLFW
@@ -23,7 +27,7 @@ int main()
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 
     // Initialize window
-    GLFWwindow* window = glfwCreateWindow(800, 600, "graphics_programming", NULL, NULL);
+    GLFWwindow* window = glfwCreateWindow(SCREEN_WIDTH, SCREEN_HEIGHT, "graphics_programming", NULL, NULL);
     // Error handling to make sure GLFW is initialized
     if (window == NULL)
     {
@@ -118,6 +122,21 @@ int main()
     // De-allocate image data
     stbi_image_free(data);
     
+    // Transform matrices
+    shader.use();
+    // Model
+    glm::mat4 model = glm::mat4(1.0f);
+    model = glm::rotate(model, glm::radians(-20.0f), glm::vec3(1.0f, 0.0f, 0.0f));
+    model = glm::translate(model, glm::vec3(0.0f, 0.5f, 0.0f));
+    shader.setMatrix4fv("model", model);
+    // View
+    glm::mat4 view = glm::mat4(1.0f);
+    view = glm::translate(view, glm::vec3(0.0f, 0.0f, -5.0f));
+    shader.setMatrix4fv("view", view);
+    // Projection
+    glm::mat4 projection = glm::perspective(glm::radians(45.0f), (float)SCREEN_WIDTH / (float)SCREEN_HEIGHT, 0.1f, 100.0f);
+    shader.setMatrix4fv("projection", projection);
+
     // While window is open
     while (!glfwWindowShouldClose(window))
     {
@@ -130,13 +149,6 @@ int main()
         glBindTexture(GL_TEXTURE_2D, texture);
 	    // Bind shader program
         shader.use();
-	    // Transform matrix
-        // Start by defining the identity matrix
-        glm::mat4 trans = glm::mat4(1.0f);
-        // Add rotation to transform matrix
-        trans = glm::rotate(trans, (float)glfwGetTime(), glm::vec3(0.0f, 0.0f, 1.0f));
-        // Copy matrix into uniform for shader
-        shader.setMatrix4fv("transform", trans); 
 	    // Bind vertex array
 	    glBindVertexArray(VAO);
 	    // Draw vertices
