@@ -6,6 +6,7 @@
 
 // Custom includes
 #include <shader.h>
+#include <camera.h>
 
 // Resources
 #include <stb_image.h> // Image loading library
@@ -15,6 +16,17 @@
 // Window width and height
 const unsigned int SCREEN_WIDTH = 800;
 const unsigned int SCREEN_HEIGHT = 600;
+
+float deltaTime = 0.0f;
+float lastFrame = 0.0f;
+
+void processInput(GLFWwindow *window, float deltaTime, Camera *camera)
+{
+    if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS) camera->processMovement(FORWARD, deltaTime);
+    if (glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS) camera->processMovement(BACKWARD, deltaTime);
+    if (glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS) camera->processMovement(RIGHT, deltaTime);
+    if (glfwGetKey(window, GLFW_KEY_A) == GLFW_PRESS) camera->processMovement(LEFT, deltaTime);
+}
 
 int main()
 {
@@ -157,26 +169,26 @@ int main()
     // De-allocate image data
     stbi_image_free(data);
     
-    // Transform matrices
-    shader.use();
-    // Model
-    glm::mat4 model = glm::mat4(1.0f);
-    model = glm::rotate(model, glm::radians(45.0f), glm::vec3(0.0f, 1.0f, 0.0f));
-    shader.setMatrix4fv("model", model);
-    // View
-    glm::mat4 view = glm::mat4(1.0f);
-    view = glm::translate(view, glm::vec3(0.0f, 0.0f, -5.0f));
-    shader.setMatrix4fv("view", view);
-    // Projection
-    glm::mat4 projection = glm::perspective(glm::radians(45.0f), (float)SCREEN_WIDTH / (float)SCREEN_HEIGHT, 0.1f, 100.0f);
-    shader.setMatrix4fv("projection", projection);
-
     // Enable the Z-buffer for depth testing
     glEnable(GL_DEPTH_TEST);
+
+    // Create camera
+    glm::vec3 cameraPos = glm::vec3(0.0f, 0.0f, 3.0f);
+    glm::vec3 cameraFront = glm::vec3(0.0f, 0.0f, -1.0f);
+    glm::vec3 cameraUp = glm::vec3(0.0f, 1.0f, 0.0f);
+    Camera camera(cameraPos, cameraFront, cameraUp);
 
     // While window is open
     while (!glfwWindowShouldClose(window))
     {
+        // deltaTime
+        float currentFrame = static_cast<float>(glfwGetTime());
+        deltaTime = currentFrame - lastFrame;
+        lastFrame = currentFrame;
+        
+        // Events
+        processInput(window, deltaTime, &camera);
+
         // Clear the Z-buffer
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 	    // Clear the color buffer
@@ -188,10 +200,19 @@ int main()
         glBindTexture(GL_TEXTURE_2D, texture);
 	    // Bind shader program
         shader.use();
-        model = glm::mat4(1.0f);
-        model = glm::rotate(model, glm::radians(40.0f), glm::vec3(0.0f, 1.0f, 0.0f));
-        model = glm::rotate(model, glm::radians((float)glfwGetTime() * 50.0f), glm::normalize(glm::vec3(1.0f, 0.0f, 1.0f)));
+        // Transform matrices
+        // Model
+        glm::mat4 model = glm::mat4(1.0f);
+        model = glm::rotate(model, glm::radians(45.0f), glm::vec3(0.0f, 1.0f, 0.0f));
+        model = glm::rotate(model, glm::radians((float)glfwGetTime() * 49.0f), glm::normalize(glm::vec3(1.0f, 0.0f, 1.0f)));
         shader.setMatrix4fv("model", model);
+        // View
+        glm::mat4 view = camera.getViewMatrix();
+        shader.setMatrix4fv("view", view);
+        // Projection
+        glm::mat4 projection = glm::perspective(glm::radians(45.0f), (float)SCREEN_WIDTH / (float)SCREEN_HEIGHT, 0.1f, 100.0f);
+        shader.setMatrix4fv("projection", projection);
+
 	    // Bind vertex array
 	    glBindVertexArray(VAO);
 	    // Draw vertices

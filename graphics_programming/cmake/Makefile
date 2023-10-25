@@ -129,6 +129,30 @@ main/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
 .PHONY : main/fast
 
+4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/graphics_programming/src/camera.obj: 4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/graphics_programming/src/camera.cpp.obj
+.PHONY : 4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/graphics_programming/src/camera.obj
+
+# target to build an object file
+4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/graphics_programming/src/camera.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/graphics_programming/src/camera.cpp.obj
+.PHONY : 4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/graphics_programming/src/camera.cpp.obj
+
+4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/graphics_programming/src/camera.i: 4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/graphics_programming/src/camera.cpp.i
+.PHONY : 4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/graphics_programming/src/camera.i
+
+# target to preprocess a source file
+4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/graphics_programming/src/camera.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/graphics_programming/src/camera.cpp.i
+.PHONY : 4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/graphics_programming/src/camera.cpp.i
+
+4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/graphics_programming/src/camera.s: 4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/graphics_programming/src/camera.cpp.s
+.PHONY : 4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/graphics_programming/src/camera.s
+
+# target to generate assembly for a file
+4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/graphics_programming/src/camera.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/graphics_programming/src/camera.cpp.s
+.PHONY : 4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/graphics_programming/src/camera.cpp.s
+
 4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/graphics_programming/src/glad.obj: 4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/graphics_programming/src/glad.c.obj
 .PHONY : 4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/graphics_programming/src/glad.obj
 
@@ -234,6 +258,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... main"
+	@echo "... 4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/graphics_programming/src/camera.obj"
+	@echo "... 4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/graphics_programming/src/camera.i"
+	@echo "... 4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/graphics_programming/src/camera.s"
 	@echo "... 4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/graphics_programming/src/glad.obj"
 	@echo "... 4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/graphics_programming/src/glad.i"
 	@echo "... 4deaca4756d950829a26bcc2e2c50a51/Dev/graphics_programming/graphics_programming/src/glad.s"
